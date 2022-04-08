@@ -1,0 +1,26 @@
+.indexFooter {
+  background-color: $black;
+.indexFooterLogoTextsContainer{
+display: flex;
+justify-content: space-around;
+}
+  .logoFooter {
+width: 20vw;
+    margin: 1em;
+  }
+}
+.footerListsContainer {
+  display: flex;
+
+  .footerLists {
+margin: 1em;
+    h4 {
+      color: $pink;
+margin-bottom: 0.5em;
+    }
+    p {
+      color: $white;
+margin-bottom: 0.2em;
+    }
+  }
+}

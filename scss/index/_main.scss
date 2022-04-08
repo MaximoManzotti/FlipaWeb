@@ -1,0 +1,87 @@
+.indexMainTitle {
+  background-image: url("../../assets/bg_home.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color: $white;
+  padding: 10vh 0 6vh 6vw;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  h2 {
+    margin: 2vh 0vh;
+    font-size: 3.7vw;
+  }
+  button {
+    background-color: $pink;
+    color: $white;
+    width: 30vw;
+    font-size: 2vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.2em;
+  }
+}
+
+.indexMainTexts {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  .indexMainTextWorks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin: 3vw 3vw 0px 3vw;
+  }
+
+  .indexMainTextWorksTitle {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+  }
+  .indexMainTextWorksTitleDescription {
+    color: $white;
+    width: 40vw;
+
+    ul {
+      display: flex;
+      li {
+        text-decoration: none;
+        list-style: none;
+         margin: 0px 5px 1em 0px ;
+      }
+    }
+  }
+  .indexMainTextAboutWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0vw 3vw 3vw 3vw;
+    .indexMainTextAboutWorkDiv {
+      width: 20vw;
+      margin: 3vw;
+      h4 {
+        color: $pink;
+        font-size: 2vw;
+        font-weight: normal;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.drop{
+width: 5vw;
+}

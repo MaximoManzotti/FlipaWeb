@@ -1,0 +1,34 @@
+.indexMainAboutWorkContainer {
+background-color: $black;
+ color: $white;
+  display: flex;
+  flex-direction: column;
+  .indexMainAboutWork {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vw ;
+  }
+
+  .indexMainAboutWorkTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+  }
+  .indexMainAboutWorkDescription {
+    width: 40vw;
+    ul {
+      display: flex;
+      li {
+        text-decoration: none;
+        list-style: none;
+        margin: 0px 5px 1em 0px ;
+      }
+    }
+  }
+}

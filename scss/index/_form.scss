@@ -1,0 +1,63 @@
+.indexMainFormSection {
+  background-color: $pink;
+  padding: 0vh 0 6vh 6vw;
+  form {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+
+  .indexMainFormTitle {
+    color: $white;
+    display: flex;
+    align-items: center;
+    h3 {
+      font-size: 4vw;
+    }
+  }
+.FormBtn{
+    background-color: $black;
+    color: $white;
+    width: 30vw;
+    font-size: 2vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.2em;
+}
+}
+
+.firstLineForm {
+  display: flex;
+}
+.formSecondLine {
+  display: flex;
+  margin-top: 1vw;
+}
+
+textarea,
+input,
+select {
+  resize: none;
+  height: 21px;
+  background-color: $pink;
+  border-color: $black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: thin;
+  text-align: center;
+}
+input:focus,textarea:focus {
+  text-align: start;
+}
+::placeholder {
+  color: $white;
+}
+select {
+  background: $pink;
+  color: $white;
+  text-align: center;
+}
+select:hover {
+  background: $black;
+}

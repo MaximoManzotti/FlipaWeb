@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
+  outline: 0;
+}
+
+.indexHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161616;
+  color: #FFFFFF;
+}
+.indexHeader .svgNav {
+  width: 4em;
+  margin: 1em;
+}
+.indexHeader .indexHeaderImage {
+  width: 6em;
+}
+
+.indexMainTitle {
+  background-image: url("../../assets/bg_home.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 10vh 0 6vh 6vw;
+}
+.indexMainTitle h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 10vw;
+  line-height: 11vw;
+}
+.indexMainTitle h2 {
+  margin: 2vh 0vh;
+  font-size: 3.7vw;
+}
+.indexMainTitle button {
+  background-color: #f6007c;
+  color: #FFFFFF;
+  width: 30vw;
+  font-size: 2vw;
+  padding: 1vw;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.indexMainTexts {
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+}
+.indexMainTexts .indexMainTextWorks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3vw 3vw 0px 3vw;
+}
+.indexMainTexts .indexMainTextWorksTitle {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexMainTexts h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+}
+.indexMainTexts .indexMainTextWorksTitleDescription {
+  color: #FFFFFF;
+  width: 40vw;
+}
+.indexMainTexts .indexMainTextWorksTitleDescription ul {
+  display: flex;
+}
+.indexMainTexts .indexMainTextWorksTitleDescription ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px 5px 1em 0px;
+}
+.indexMainTexts .indexMainTextAboutWork {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0vw 3vw 3vw 3vw;
+}
+.indexMainTexts .indexMainTextAboutWork .indexMainTextAboutWorkDiv {
+  width: 20vw;
+  margin: 3vw;
+}
+.indexMainTexts .indexMainTextAboutWork .indexMainTextAboutWorkDiv h4 {
+  color: #f6007c;
+  font-size: 2vw;
+  font-weight: normal;
+}
+.indexMainTexts .indexMainTextAboutWork .indexMainTextAboutWorkDiv p {
+  color: #FFFFFF;
+}
+
+.drop {
+  width: 5vw;
+}
+
+.indexMainPorfolio {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.indexMainPorfolio .indexMainPorfolioTexts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3vw;
+}
+.indexMainPorfolio .indexMainPorfolioTitle {
+  color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexMainPorfolio h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+}
+.indexMainPorfolio .indexMainPorfolioDescription {
+  color: #161616;
+  width: 40vw;
+}
+.indexMainPorfolio .indexMainPorfolioDescription ul {
+  display: flex;
+}
+.indexMainPorfolio .indexMainPorfolioDescription ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px 5px 1em 0px;
+}
+
+.glider.draggable {
+  width: 85%;
+}
+
+.imgCarrouselDiv {
+  margin: 1em;
+}
+
+.glider-dot.active {
+  background-color: #f6007c;
+}
+
+.indexMainAboutWorkContainer {
+  background-color: #161616;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.indexMainAboutWorkContainer .indexMainAboutWork {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3vw;
+}
+.indexMainAboutWorkContainer .indexMainAboutWorkTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indexMainAboutWorkContainer h3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+}
+.indexMainAboutWorkContainer .indexMainAboutWorkDescription {
+  width: 40vw;
+}
+.indexMainAboutWorkContainer .indexMainAboutWorkDescription ul {
+  display: flex;
+}
+.indexMainAboutWorkContainer .indexMainAboutWorkDescription ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px 5px 1em 0px;
+}
+
+.indexMainFormSection {
+  background-color: #f6007c;
+  padding: 0vh 0 6vh 6vw;
+}
+.indexMainFormSection form {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+.indexMainFormSection .indexMainFormTitle {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.indexMainFormSection .indexMainFormTitle h3 {
+  font-size: 4vw;
+}
+.indexMainFormSection .FormBtn {
+  background-color: #161616;
+  color: #FFFFFF;
+  width: 30vw;
+  font-size: 2vw;
+  padding: 1vw;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.firstLineForm {
+  display: flex;
+}
+
+.formSecondLine {
+  display: flex;
+  margin-top: 1vw;
+}
+
+textarea,
+input,
+select {
+  resize: none;
+  height: 21px;
+  background-color: #f6007c;
+  border-color: #161616;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: thin;
+  text-align: center;
+}
+
+input:focus, textarea:focus {
+  text-align: start;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+::placeholder {
+  color: #FFFFFF;
+}
+
+select {
+  background: #f6007c;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+select:hover {
+  background: #161616;
+}
+
+.indexFooter {
+  background-color: #161616;
+}
+.indexFooter .indexFooterLogoTextsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.indexFooter .logoFooter {
+  width: 20vw;
+  margin: 1em;
+}
+
+.footerListsContainer {
+  display: flex;
+}
+.footerListsContainer .footerLists {
+  margin: 1em;
+}
+.footerListsContainer .footerLists h4 {
+  color: #f6007c;
+  margin-bottom: 0.5em;
+}
+.footerListsContainer .footerLists p {
+  color: #FFFFFF;
+  margin-bottom: 0.2em;
+}/*# sourceMappingURL=style.css.map */
