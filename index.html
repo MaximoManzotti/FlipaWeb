@@ -161,12 +161,12 @@
             <h3>ESCRIBINOS</h3>
         </div>
 
-        <form action="mailto:sergio@flipa.ar?subject=Contacto con Flipa" method="post" enctype="text/plain">
+        <form>
             <div class="formFirstLine">
                 <label for="name">Hola👋🏻, mi nombre es:</label>
-                <input type="text" id="name" name="Nombre" placeholder="Dejanos tu nombre">
+                <input type="text" id="nameForm" placeholder="Dejanos tu nombre">
                 <label for="mail">estoy interesadx en el servicio de</label>
-                <select name="servicio">
+                <select id="teamForm" type="text">
     <optgroup label="Marketin">
       <option value="Instagram">Instagram</option>
       <option value="TikTok">TikTok</option>
@@ -179,11 +179,11 @@
   </select>
             </div>
             <div class="formSecondLine">
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="Mensaje" placeholder="Dejanos tu mensaje"></textarea>
+                <label for="msg">Email:</label>
+                <input id="mailTo" placeholder="Dejanos tu email"> </input>
             </div>
-            <label><input type="checkbox" id="cbox1" value="first_checkbox"> Este es mi primer checkbox</label>
-            <button class="FormBtn">ENVIAR</button>
+            <label><input type="checkbox" id="cbox" > Este es mi primer checkbox</label>
+            <button class="FormBtn" id="submit" onclick="sendMail()">ENVIAR</button>
         </form>
     </section>
 
@@ -213,7 +213,12 @@
     </div>
 </footer>
 
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("5WgyDfJ4BSctiW53C");
+    })();
+</script>
 <script src="./glider.min.js"></script>
 <script src="./app.js"></script>
 </body>

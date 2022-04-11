@@ -1,7 +1,11 @@
-let titleTexts = document.querySelector("#textsContainerAboutWork");
-let titleTextsPorfolio = document.querySelector("#textsContainerPorfolio");
-let titleTextsMain = document.querySelector("#textsContainerMainTexts");
-
+let TitleTexts = document.querySelector("#textsContainerAboutWork");
+let TitleTextsPorfolio = document.querySelector("#textsContainerPorfolio");
+let TitleTextsMain = document.querySelector("#textsContainerMainTexts");
+let Name = document.querySelector('#nameForm')
+let Team = document.querySelector('#teamForm')
+let Mail = document.querySelector('#mailTo')
+let ButtonForm = document.getElementById('submit');
+let CheckboxForm = document.getElementById('cbox')
 
 window.addEventListener("load", function() {
     new Glider(document.querySelector(".glider"), {
@@ -19,16 +23,41 @@ window.addEventListener("load", function() {
 function Cards(paragraph, description) {
     switch (paragraph) {
         case 1:
-            titleTextsMain.innerHTML = `<p>${description}</p>`;
+            TitleTextsMain.innerHTML = `<p>${description}</p>`;
             break;
         case 2:
-            titleTextsPorfolio.innerHTML = `<p>${description}</p>`;
+            TitleTextsPorfolio.innerHTML = `<p>${description}</p>`;
             break;
         case 3:
-            titleTexts.innerHTML = `<p>${description}</p>`;
+            TitleTexts.innerHTML = `<p>${description}</p>`;
             break;
         default:
-            titleTexts.innerHTML = `<p>No cargo correctamente el texto</p>`;
+            TitleTexts.innerHTML = `<p>No cargo correctamente el texto</p>`;
             break;
     }
+}
+
+ButtonForm.addEventListener('click', function(event) {
+    event.preventDefault();
+    this.innerHTML = "Button clicked!";
+});
+
+function sendMail(params) {
+    if (CheckboxForm.checked) {
+        console.log(Mail.value)
+        let tempParms = {
+            from_name: Name.value,
+            to_name: Team.value,
+            mail: Mail.value,
+
+        }
+        emailjs.send('gmail', 'template_flipa', tempParms)
+            .then(function(res) {
+                console.log('success', res.status)
+            })
+    } else {
+        console.log('tenes que aceptar los terminos y condiciones')
+
+    }
+
 }
